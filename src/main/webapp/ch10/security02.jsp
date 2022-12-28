@@ -9,6 +9,8 @@
 	<p>	인증한 사용자명이 역할명 "tomcat"에 속하는 사용자인가요?
 		<%=request.isUserInRole("tomcat")%>
 	<p>	인증한 사용자명이 역할명 "role1"에 속하는 사용자인가요?
-		<%=request.isUserInRole("role1")%>  
+		<%=request.isUserInRole("role1")%>
+	<p>	인증한 사용자명이 역할명 "admin"에 속하는 사용자인가요?
+		<%=request.isUserInRole("admin")%>	  
 </body>
 </html>

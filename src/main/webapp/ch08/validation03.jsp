@@ -14,7 +14,7 @@
 		}  	
 	
 		if (form.passwd.value.length < 4) {		
-			alert("비밀번호는   4자 이상으로 입력해야 합니다!");
+			alert("비밀번호는 4자 이상으로 입력해야 합니다!");
 			form.passwd.select();
 			return;
 		}	
