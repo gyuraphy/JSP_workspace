@@ -13,4 +13,4 @@
 	<p>	인증한 사용자명이 역할명 "admin"에 속하는 사용자인가요?
 		<%=request.isUserInRole("admin")%>	  
 </body>
-</html>
+</html> 
