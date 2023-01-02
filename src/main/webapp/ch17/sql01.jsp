@@ -7,20 +7,22 @@
 </head>
 <body>
 	<sql:setDataSource var="dataSource"
-		url="jdbc:mysql://localhost:3306/JSPBookDB"
-		driver="com.mysql.jdbc.Driver" user="root" password="1234" />
+		url="jdbc:mysql://localhost:3306/WebMarketDB"
+		driver="com.mysql.jdbc.Driver" user="root" password="k404"/>
 
 
 	<sql:query var="resultSet" dataSource="${dataSource}">
-		select * from member
+		select * from member2
 	</sql:query>
 
 	<table border="1">
+		<!-- table의 각 컬컮을 가져온다 -->
 		<tr>
 			<c:forEach var="columnName" items="${resultSet.columnNames}">
 				<th width="100"><c:out value="${columnName}" /></th>
 			</c:forEach>
 		</tr>
+		<!-- 한 행을 가져온다 -->
 		<c:forEach var="row" items="${resultSet.rowsByIndex}">
 		<tr>
 			<c:forEach var="column" items="${row}" varStatus="i">
